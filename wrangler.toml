@@ -11,4 +11,4 @@ directory = "./public"
 
 # Turnstile disabled until keys are added
 [vars]
-TURNSTILE_ENABLED = "false"
+TURNSTILE_ENABLED = "true"

@@ -17,7 +17,7 @@ interface Env {
 
 // Simple in-memory rate limiting (resets on worker restart)
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
-const RATE_LIMIT = 10;
+const RATE_LIMIT = 30; // Increased for better UX
 const RATE_WINDOW = 60 * 1000;
 
 function checkRateLimit(ip: string): { allowed: boolean; remaining: number; retryAfter: number } {
